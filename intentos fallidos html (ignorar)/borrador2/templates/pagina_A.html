@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bienvenido</title>
+    </head>
+    <body>
+        <h1>Seleccione una opción</h1>
+        <form method="get">
+            <button type="submit" formaction="{{ url_for('crear_cuenta') }}">Registrarse</button>
+            <button type="submit" formaction="{{ url_for('iniciar_sesion') }}">Iniciar sesión</button>
+        </form>
+    </body>
+</httml>

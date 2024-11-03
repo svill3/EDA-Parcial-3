@@ -1,0 +1,6 @@
+['Juan', 'Pérez', 'sogffoffffffffog', '03g0go3', 'None', 'None']
+['Ana', 'López', 'aggeb', '03g55gb0go3', '[5, 3]', '2']
+['Carlos', 'García', 'mario123', 'abc123', '[2, 1, 1, 10, 5]', 'None']
+['Juan', 'Pérez', 'sogffoffffffffog', '03g0go3', 'None', 'None']
+['Pedro', 'Sánchez', 'xyz789', 'ghi789', 'None', 'None']
+["aa", "aa", "aaaa", "5353", "None", "None"]

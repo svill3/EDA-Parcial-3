@@ -1,0 +1,2 @@
+['Sebastián', 'Villegas', 'svillegas', 'lacontra999', '[10, 3, 10]', 'None']
+['Jose', 'Rojas', 'jrojas', 'lrlr', '[2]', 'None']

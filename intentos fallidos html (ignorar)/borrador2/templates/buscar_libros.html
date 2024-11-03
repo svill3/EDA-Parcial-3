@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Libros</title>
+</head>
+<body>
+    <h1>Buscar Libros</h1>
+    <h2>Último libro leído:</h2>
+    <p>{{ ultimo_libro_info }}</p>
+    
+    <h2>Libros recomendados:</h2>
+    <ul>
+        {% for libro in libros_recomendados %}
+            <li>ID: {{ libro[0] }}, Título: {{ libro[1] }}. Autores: {{ libro[2] }}, {{ libro[3] }}, {{ libro[4] }}. Año: {{ libro[5] }}. Materia: {{ libro[6] }}</li>
+        {% endfor %}
+    </ul>
+    
+    <h2>Escoger libro:</h2>
+    <form action="/buscar_libros" method="POST">
+        <label for="libro_id">Ingresa la ID del libro:</label>
+        <input type="number" name="libro_id" id="libro_id" required>
+        <button type="submit">Seleccionar</button>
+    </form>
+</body>
+</html>

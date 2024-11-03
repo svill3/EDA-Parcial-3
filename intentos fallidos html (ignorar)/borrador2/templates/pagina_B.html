@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página B</title>
+</head>
+<body>
+    <h1>Bienvenid@, {{ usuario.nombre }}</h1>
+    
+    {% if usuario.libro_actual is none %}
+        <p>Estado actual: No se te ha prestado ningún libro.</p>
+    {% else %}
+        <p>Estado actual: Un libro se te ha sido prestado. Esta es su información:</p>
+        <p>{{ libro_info }}</p>
+    {% endif %}
+    
+    <h2>Opciones</h2>
+    <form action="{{ url_for('buscar_libros', usuario=usuario) }}" method="POST">
+        <button type="submit">Buscar libros</button>
+    </form>
+    <form action="{{ url_for('devolver_libro', usuario=usuario) }}" method="POST">
+        <button type="submit">Devolver libro actual</button>
+    </form>
+    <form action="{{ url_for('ver_historial', usuario=usuario) }}" method="POST">
+        <button type="submit">Ver mi historial de libros</button>
+    </form>
+    <form action="{{ url_for('cerrar_sesion', usuario=usuario) }}" method="POST">
+        <button type="submit">Cerrar sesión</button>
+    </form>
+</body>
+</html>
